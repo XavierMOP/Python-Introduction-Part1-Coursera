@@ -5,7 +5,7 @@ Calculator logic
     Store
     Operand
 
-  Operations
+ Operations
     Print
     Swap
     Add
