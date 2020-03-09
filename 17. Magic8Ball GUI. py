@@ -1,0 +1,39 @@
+import random
+import simpleguitk as simplegui
+
+
+def number_to_fortune(num):
+    if num == 0:
+        return "Yes, for sure!"
+    elif num == 1:
+        return "Probably yes."
+    elif num == 2:
+        return "Seems like yes..."
+    elif num == 3:
+        return "Definitely not!"
+    elif num == 4:
+        return "Probably not."
+    elif num == 5:
+        return "I really doubt it..."
+    elif num == 6:
+        return "Not sure, check back later!"
+    elif num == 7:
+        return "I really can't tell"
+    else:
+        return "Something was wrong with the input."
+
+
+def question(q):
+    print('Your question is : ' + q + '\n')
+    print('You shake the mystical octosphere!')
+    answer_number = random.randrange(0, 7)
+    answer_fortune = number_to_fortune(answer_number)
+    print('The cloudy liquid swirls, and a reply comes into view...')
+    print('The mystical octosphere says...' + answer_fortune + '.\n\n')
+
+
+f = simplegui.create_frame('Magic8Ball!', 250, 250)
+
+f.add_input('What do you want to know?', question, 200)
+
+f.start()
