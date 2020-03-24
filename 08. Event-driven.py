@@ -4,9 +4,12 @@
 import simpleguitk as simplegui
 
 # Event handler
+
+
 def tick():
-    print ("tick!")
-    print ('')
+    print("tick!")
+    print('')
+
 
 # Register handler
 timer = simplegui.create_timer(1000, tick)

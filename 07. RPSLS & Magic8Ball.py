@@ -33,12 +33,12 @@ def number_to_name(number):
 
 
 def rpsls(player_choise):
-    print("The player's choise is", str(player_choise)+".")
+    print("The player's choise is", str(player_choise) + ".")
     player_number = name_to_number(player_choise)
     # print player_number
     computer_number = random.randrange(0, 4)
     computer_choise = number_to_name(computer_number)
-    print("The computer's choise is", str(computer_choise)+".")
+    print("The computer's choise is", str(computer_choise) + ".")
     if computer_number == player_number:
         print("Tie!")
     elif (computer_number - player_number) % 5 == 1 or (computer_number - player_number) % 5 == 2:
@@ -90,7 +90,7 @@ def number_to_fortune(num):
 
 
 def mystical_octosphere(question):
-    print('Your question is : '+question)
+    print('Your question is : ' + question)
     print('You shake the mystical octosphere!')
     answer_number = random.randrange(0, 7)
     answer_fortune = number_to_fortune(answer_number)

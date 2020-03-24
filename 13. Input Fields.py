@@ -15,18 +15,21 @@ def output():
     print("Store = ", store)
     print("Operand = ", operand)
     print("")
-    
+
+
 def swap():
     """ swap contents of store and operand"""
     global store, operand
     store, operand = operand, store
     output()
-    
+
+
 def add():
     """ add operand to store"""
     global store
     store = store + operand
     output()
+
 
 def sub():
     """ subtract operand from store"""
@@ -34,11 +37,13 @@ def sub():
     store = store - operand
     output()
 
+
 def mult():
     """ multiply store by operand"""
     global store
     store = store * operand
     output()
+
 
 def div():
     """ divide store by operand"""
@@ -46,14 +51,16 @@ def div():
     store = store / operand
     output()
 
+
 def enter(t):
     """ enter a new operand"""
     global operand
-    operand = float(t) #claim data type!!!
+    operand = float(t)  # claim data type!!!
     output()
-    
+
+
 # create frame
-f = simplegui.create_frame("Calculator",300,300)
+f = simplegui.create_frame("Calculator", 300, 300)
 
 # register event handlers and create control elements
 f.add_button("Print", output, 100)

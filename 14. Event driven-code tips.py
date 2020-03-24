@@ -203,7 +203,7 @@ print("n = ", n3)
 
 def f1(a, b):
     """Returns True exactly when a is False and b is True."""
-    if a == False and b == True:
+    if a is False and b is True:
         return True
     else:
         return False
@@ -248,7 +248,7 @@ print('')
 
 def g1(a, b):
     """Returns False eactly when a and b are both True."""
-    if a == True and b == True:
+    if a is True and b is True:
         return False
     else:
         return True

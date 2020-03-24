@@ -5,7 +5,7 @@ Calculator logic
     Store
     Operand
 
- Operations
+  Operations
     Print
     Swap
     Add
@@ -31,18 +31,21 @@ def output():
     print("Store = ", store)
     print("Operand = ", operand)
     print("")
-    
+
+
 def swap():
     """ swap contents of store and operand"""
     global store, operand
     store, operand = operand, store
     output()
-    
+
+
 def add():
     """ add operand to store"""
     global store
     store = store + operand
     output()
+
 
 def sub():
     """ subtract operand from store"""
@@ -50,17 +53,20 @@ def sub():
     store = store - operand
     output()
 
+
 def mult():
     """ multiply store by operand"""
     global store
     store = store * operand
     output()
 
+
 def div():
     """ divide store by operand"""
     global store
     store = store / operand
     output()
+
 
 def fac():
     """hahaha"""
@@ -70,7 +76,7 @@ def fac():
 
 
 # create frame
-f = simplegui.create_frame("Calculator",300,300)
+f = simplegui.create_frame("Calculator", 300, 300)
 
 # register event handlers
 f.add_button("Print", output, 100)

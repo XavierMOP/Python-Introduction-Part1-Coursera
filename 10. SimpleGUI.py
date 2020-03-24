@@ -30,13 +30,18 @@ import simpleguitk as simplegui
 message = "Welcome!"
 
 # Handler for mouse click
+
+
 def click():
     global message
     message = "Good job!"
 
 # Handler to draw on canvas
+
+
 def draw(canvas):
-    canvas.draw_text(message, [50,112], 36, "Blue")
+    canvas.draw_text(message, [50, 112], 36, "Blue")
+
 
 # Create a frame and assign callbacks to event handlers
 frame = simplegui.create_frame("Home", 300, 200)
@@ -45,7 +50,6 @@ frame.set_draw_handler(draw)
 
 # Start the frame animation
 frame.start()
-
 
 
 # # Second example (do not work in VS code)

@@ -13,8 +13,9 @@ import random
 def volume_cube(side):
     return side ** 3
 
+
 side = 2
-print ("Volume of cube with side", side, "is", volume_cube(side), ".")
+print("Volume of cube with side", side, "is", volume_cube(side), ".")
 
 
 ############
@@ -24,18 +25,20 @@ def random_dice():
     die2 = random.randrange(1, 7)
     return die1 + die2
 
-print ("Sum of two random dice, rolled once:", random_dice())
-print ("Sum of two random dice, rolled again:", random_dice())
-print ("Sum of two random dice, rolled again:", random_dice())
+
+print("Sum of two random dice, rolled once:", random_dice())
+print("Sum of two random dice, rolled again:", random_dice())
+print("Sum of two random dice, rolled again:", random_dice())
 
 
 ############
 # Has an AttributeError
 def volume_sphere(radius):
-    return 4.0/3.0 * math.pi * (radius ** 3)
+    return 4.0 / 3.0 * math.pi * (radius ** 3)
+
 
 r = 2
-print ("Volume of sphere of radius", r, "is", volume_sphere(r), ".")
+print("Volume of sphere of radius", r, "is", volume_sphere(r), ".")
 
 
 ############
@@ -43,18 +46,21 @@ print ("Volume of sphere of radius", r, "is", volume_sphere(r), ".")
 def area_triangle(base, height):
     return 0.5 * base * height
 
+
 b = 5
 h = 2 + 2
-print ("Area of triangle with base", b, "and height", h, "is", area_triangle(b, h), ".")
+print("Area of triangle with base", b, "and height",
+      h, "is", area_triangle(b, h), ".")
 
 
 ############
 # Has multiple SyntaxErrors
 def is_mary(x):
     if x == "Mary":
-        print ("Found Mary!")
+        print("Found Mary!")
     else:
-        print ("No Mary.")
+        print("No Mary.")
+
 
 is_mary("Mary")
 is_mary("Fred")
@@ -62,9 +68,9 @@ is_mary("Fred")
 
 ############
 # Poor readability
-def area(a,b,c):
-    s = (a+b+c)/2.0
-    return math.sqrt(s*(s-a)*(s-b)*(s-c))
+def area(a, b, c):
+    s = (a + b + c) / 2.0
+    return math.sqrt(s * (s - a) * (s - b) * (s - c))
 
 
 ############
@@ -74,33 +80,33 @@ def area_triangle_sss(side1, side2, side3):
     Returns the area of a triangle, given the lengths of
     its three sides.
     """
-    
+
     # Use Heron's formula
     semiperim = (side1 + side2 + side3) / 2.0
-    return math.sqrt(semiperim *
-                     (semiperim - side1) *
-                     (semiperim - side2) * 
-                     (semiperim - side3))
+    return math.sqrt(semiperim * (semiperim - side1) * (semiperim - side2) * (semiperim - side3))
+
 
 base = 3
 height = 4
 hyp = 5
-print ("Area of triangle with sides", base, height, hyp, "is", area_triangle_sss(base, height, hyp), ".")
+print("Area of triangle with sides", base, height, hyp,
+      "is", area_triangle_sss(base, height, hyp), ".")
 
 
 ############
 # Could use error-checking of input value
 def favorites(instructor):
     """Return the favorite thing of the given instructor."""
-    
+
     if instructor == "Joe":
         return "games"
     elif instructor == "Scott":
         return "ties"
     elif instructor == "John":
         return "outdoors"
-        
-print (favorites("John"))
-print (favorites("Jeannie"))
-print (favorites('Scott'))
-print (favorites('Scot'))
+
+
+print(favorites("John"))
+print(favorites("Jeannie"))
+print(favorites('Scott'))
+print(favorites('Scot'))
