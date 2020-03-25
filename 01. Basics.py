@@ -29,7 +29,7 @@ print(float(3), float(-1))
 
 print(3.1415926535897932384626433832795028841971)
 
-# appoximation of square root of two, Python displays 12 decimal digits
+# approximation of square root of two, Python displays 12 decimal digits
 
 print(1.4142135623730950488016887242096980785696)
 

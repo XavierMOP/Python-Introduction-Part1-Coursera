@@ -45,8 +45,7 @@ def count_check():
     if count > 0:
         print('You have', str(count), 'guesses remaining.\n')
     else:
-        print('Out of guesses! You lose! The number is ' +
-              str(secret_number) + '.\n')
+        print('Out of guesses! You lose! The number is ' + str(secret_number) + '.\n')
         new_game()
 
 
