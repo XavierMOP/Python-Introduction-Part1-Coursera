@@ -18,7 +18,7 @@ Why use 0.1 interval instead of 1.0, why use time in integer instead of float : 
 
 def format(t):
     A = t // 600
-    B = (t - A * 600) // 100
+    B = (t - A * 600) // 100colr
     C = (t - A * 600 - B * 100) // 10
     D = t - A * 600 - B * 100 - C * 10
     return str(A) + ':' + str(B) + str(C) + '.' + str(D)
@@ -77,7 +77,8 @@ timer = simplegui.create_timer(100, tick)
 
 def draw(canvas):
     canvas.draw_text(str(format(time)), (20, 130), 60, 'Red')
-    canvas.draw_text(str(success) + '/' + str(total_played), (200, 50), 30, 'Green')
+    canvas.draw_text(str(success) + '/' + str(total_played),
+                     (200, 50), 30, 'Green')
 
 
 # create frame
